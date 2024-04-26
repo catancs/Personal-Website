@@ -1,7 +1,31 @@
 .welcome-message {
-    margin-top: 50px; /* Adjust the margin as you like */
-    font-size: 3em; /* Large text */
-    font-weight: bold; /* Make the font bold */
-    color: rgb(129, 241, 17); /* Dark grey text color */
+    margin-top: 50px; 
+    font-size: 3em; 
+    color: rgb(0, 0, 0); 
   }
+  .beige-background {
+  background-color: #c4be97; 
+  min-height: 100vh; 
+flex-direction: column; 
+  justify-content: center; 
+}
+
+.paper-sheet {
+  background-color: #bbb486; 
+  margin: 1rem auto; 
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  max-width: 800px; 
+  border-radius: 15px; 
+}
+.blue-nav {
+    background-color: #97b4c4; 
+  }
+
+  .about-link {
+    color: black; 
+    font-weight: bold; 
+    text-decoration: underline;
+  }
+
   
