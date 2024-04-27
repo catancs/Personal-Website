@@ -3,7 +3,6 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-
 welcome-message {
     margin-top: 50px; 
     font-size: 3em; 
@@ -13,10 +12,8 @@ welcome-message {
   background-color: #c4be97; 
   min-height: 100vh; 
 flex-direction: column; 
-  justify-content: center; 
+  justify-content: center;
 }
-
-
 
 .paper-sheet {
   background-color: #bbb486; 
@@ -25,7 +22,10 @@ flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   max-width: 800px; 
   border-radius: 15px; 
+  justify-content: center;
 }
+
+
 .blue-nav {
     background-color: #97b4c4; 
   }
@@ -47,7 +47,7 @@ flex-direction: column;
     100% { transform: scale(1); }
 }
 .pulse {
-    animation: pulse 2s infinite;
+    animation: pulse 5s infinite;
     margin-top: 50px; 
     font-size: 3em; 
     color: rgb(0, 0, 0); 

@@ -7,7 +7,7 @@ function Home() {
 
   const [showEmail, setShowEmail] = useState(false);
 
-  const toggleEmail = () => setShowEmail(!showEmail); 
+  const toggleEmail = () => setShowEmail(!showEmail);
 
 
   
@@ -31,7 +31,7 @@ function Home() {
       <Container className="text-center">
         <h1 className="pulse">Welcome to my website, I'm Catalin!</h1>
       </Container>
-      <Container className="paper-sheet">
+<Container className="paper-sheet" style={{ backgroundColor: '#bbb486', margin: '1rem auto', padding: '2rem', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', maxWidth: '800px', borderRadius: '15px' }}>
         <section id="about" className="my-4">
           <h2><span class="material-symbols-outlined">info</span> About Me</h2>
 
