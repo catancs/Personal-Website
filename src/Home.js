@@ -1,26 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Home.css'; 
 
-
-
-
-
 function Home() {
+
+  const [showEmail, setShowEmail] = useState(false);
+
+  const toggleEmail = () => setShowEmail(!showEmail); 
+
+
+  
+
   return (
     <div className="beige-background">
       <Navbar className="blue-nav shadow-sm mb-0" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">My Portfolio</Navbar.Brand>
           <Nav className="me-auto">
+
+
             <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav-link">About</Nav.Link>
+
+
+
           </Nav>
         </Container>
       </Navbar>
       <Container className="text-center">
-        <h1 className="welcome-message">Welcome to my website, I'm Catalin!</h1>
+        <h1 className="pulse">Welcome to my website, I'm Catalin!</h1>
       </Container>
       <Container className="paper-sheet">
         <section id="about" className="my-4">
@@ -66,7 +75,7 @@ function Home() {
               • Python, TensorFlow, Keras, Streamlit<br />
               • Azure, React, .NET, OpenAI API <br />
               • Node.js, RESTful APIs, SQLite<br />
-              • Machine Learning, AI, Data Analysis (aici e de adaugat ceva)<br />
+              • Deep Learning, Neural Networks, Transformers, Data Analysis <br />
               • Networking (TCP/IP, DNS, VPN) <br />
               • Agile Methodologies, DevOps, CI/CD
 
@@ -98,7 +107,17 @@ function Home() {
 
         <section id="contact" className="my-4">
           <h2><span class="material-symbols-outlined">link</span> Links</h2>
-          {/* Content for Contact section will go here */}
+          
+          • <a href="https://www.linkedin.com/in/niculescu-catalin-stefan-9aa531197/" target="_blank" rel="noopener noreferrer" className="about-link" >LinkedIn</a> <br />
+          • <a href="https://github.com/catancs" target="_blank" rel="noopener noreferrer" className="about-link" >Github</a> <br />
+          •<button onClick={toggleEmail} className="about-link" style={{ background: 'none', border: 'none', color: 'black', textDecoration: 'underline', cursor: 'pointer' }}>
+          E-mail
+        </button>
+        <div className={`email-container ${showEmail ? 'show' : ''}`}>
+        <a href="mailto:catalinniculescu20@gmail.com" style={{ color: 'black' }}>catalinniculescu20@gmail.com</a>
+        </div>
+
+          
         </section>
       </Container>
     </div>
